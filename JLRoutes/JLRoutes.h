@@ -61,6 +61,9 @@ extern NSString *const JLRoutesGlobalRoutesScheme;
 /// Returns a routing namespace for the given scheme
 + (instancetype)routesForScheme:(NSString *)scheme;
 
+/// all routes
++ (NSArray *)allRouteSchemes;
+
 /// Unregister and delete an entire scheme namespace
 + (void)unregisterRouteScheme:(NSString *)scheme;
 

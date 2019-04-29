@@ -110,6 +110,10 @@ static Class JLRGlobal_routeDefinitionClass;
     return routesController;
 }
 
++ (NSArray *)allRouteSchemes {
+    return [JLRGlobal_routeControllersMap allKeys];
+}
+
 + (void)unregisterRouteScheme:(NSString *)scheme
 {
     [JLRGlobal_routeControllersMap removeObjectForKey:scheme];
